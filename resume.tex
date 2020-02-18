@@ -17,67 +17,86 @@
 \newcommand{\rdate}[1]{\hfill {\small #1}}
 \renewcommand{\employer}[5]{\item[#1] - #2 \rdate{#3} \\* #4 \rurl{#5}}
 \begin{document}
-\name{\Large Derek W. Gonyeo \hspace{69 mm} \footnotesize derek@gonyeo.com - \url{https://blog.gonyeo.com}}
+\name{\Large Derek W. Gonyeo \hspace{110 mm} \footnotesize derek@gonyeo.com}
 \begin{resume}
 \section{\mysidestyle Education}
     \begin{compactdesc}
-        \item[Rochester Institute of Technology] - Rochester, NY \rdate{September 2012 - Present}
+        \item[Rochester Institute of Technology] - Rochester, NY \rdate{September 2012 - December 2016}
         \small
-        \\B.S. Computer Science  - Expected Graduation December 2016
+        \\B.S. Computer Science
     \end{compactdesc}
 
 \section{\mysidestyle Experience}
     \begin{asparadesc}
-        \employer{CoreOS}{San Francisco, CA} {September 2015 - Present}{\textit{Software Engineer Intern}}{https://coreos.com/}
+        \employer{Google}{San Francisco, CA} {June 2018 - Present}{\textit{Software Engineer}}{https://fuchsia.dev/}
 
         \small
-        Worked full time at CoreOS as an intern during the Fall of 2015, and have remained on part time since returning to school. Worked on \textit{rkt}, a secure, composable container runtime for Linux. Created \textit{acbuild}, a build system for creating images conforming to the App Container spec.
+        Currently working on the \textit{Component Framework} team, which is
+        building out the main model for software execution and isolation on the
+        Fuchsia operating system.
         \normalsize
-        \\
+
+        \employer{CoreOS}{San Francisco, CA} {September 2015 - May 2018}{\textit{Software Engineer}}{https://coreos.com/}
+
+        \small
+        Started as an intern, and transferred to a full-time
+        position December 2016. Worked on \textit{rkt}, a secure, composable
+        container runtime for Linux, \textit{acbuild}, a build system for
+        creating images conforming to the App Container spec, and
+        \textit{Container Linux}, a Linux distribution designed for frequent and
+        reliable security updates.
+        \normalsize
 
         \employer{CloudFlare}{San Francisco, CA} {June 2015 - August 2015}{\textit{Software Engineer Intern}}{https://www.cloudflare.com/}
 
         \small
-        Interned at CloudFlare during the summer of 2015. Helped create \textit{gohbase}, an open source HBase client written in Go. More information is available at: \url{https://github.com/tsuna/gohbase}.
-        \normalsize
-        \\
-
-        \employer{Hudl}{Lincoln, NE}{June 2014 - January 2015}{\textit{Software Engineer Intern}}{http://hudl.com}
-
-        \small
-        Worked full time during the summer of 2014, and worked part time during the following school year. Worked on a project called Heimdall that received notifications via a REST API, it combines similar notifications into single incidents, alerts the employee on call, and exposes a website for viewing and manipulating incidents. Integrates with Postmark, Stack Driver, SNS, Cloudwatch, and PagerDuty.
+        Interned at CloudFlare during the summer of 2015. Helped create
+        \textit{gohbase}, an open source HBase client written in Go.
         \normalsize
     \end{asparadesc}
 
 \section{\mysidestyle Languages}
-    Go, Haskell, Java, C, Python
+    Rust, Go, C, C++, Haskell
     \hfill 
     \footnotesize 
     (In decreasing order of proficiency)
     \normalsize
 
-\section{\mysidestyle Projects}
+\section{\mysidestyle Personal \\ Projects}
     \begin{compactdesc}
-        \item[Haskell CRDT] \rurl{https://github.com/dgonyeo/gatekeeper} \\
-            Implemented a Commutative Replicated Data Type, or CRDT, from scratch in Haskell. A CRDT is a distributed data set with weak consistency guarantees. Pulls data from LDAP, and uses Google's Protocol Buffers to transfer data between nodes. Gained familiarity with Haskell, Protocol Buffers, and distributed concepts like the CAP Theorem. \\
-        \item[ODD - One Dimensional Display] \rurl{https://github.com/dgonyeo/odd} \\
-            Designed and build a custom display of RGB LEDs, controlled by a Raspberry Pi. Can be controlled over the network to add and remove animations with various parameters. Animations include holding a color, displaying a rainbow, strobing, and the game of life. Some animations analyze real time audio streams to display a music light show based on music. Gained familiarity with basic circuit board design, C, ALSA, and Fast Fourier Transforms. \\
-        \item[Brandreth Statistics] \rurl{https://github.com/dgonyeo/brandreth2.0} \\
-            Created a website for accessing 20 years of entries from guest books at a friend's cabin. Gained familiarity with the Go language and PostgreSQL.
+        \item[Fuchsia Linux Mode] \rurl{https://goo.gl/qTAWzv} \\
+            Wrote design doc detailing user space tools which would allow
+            running unmodified Linux executables on the Fuchsia operating
+            system.
+        \item[Cyanide] \rurl{https://github.com/dgonyeo/cyanide} \\
+            Created a console application in Haskell for managing home bar
+            inventory and recipes.
+    \end{compactdesc}
+
+\section{\mysidestyle Speaking \\ Experience}
+    \begin{compactdesc}
+        \item[CoreOS Fest 2016] \rurl{https://coreos.com/fest/2016/} \\
+            Spoke about the current state of adding support for the rkt
+            container runtime to Kubernetes, and future goals for the effort.
+        \item[LinuxCon NA 2016] \rurl{http://sched.co/7JVS} \\
+            Spoke again about the current state of adding support for the rkt
+            container runtime to Kubernetes, but spent more time describing rkt,
+            its architecture, and some of its advantages over Docker.
+        \item[KubeCon 2016] \rurl{http://sched.co/8K9M} \\
+            Spoke about the image specification of the Open Container
+            Initiative, and the impact it would have on the container ecosystem
+            once it reached a stable release.
+        \item[CoreOS Fest 2017] \rurl{https://coreos.com/fest/} \\
+            Spoke about a new tool called the Container Linux Config Transpiler,
+            covering what it was, how it fit into the Container Linux tooling,
+            and benefits users could expect to gain by using it.
     \end{compactdesc}
 
 \section{\mysidestyle Extracurricular \\ Activities}
-    \begin{asparablank}
-        \item Computer Science House Member \hfill September 2012 - Present
-        \item Computer Science House Financial Director \hfill June 2014 - May 2015
-        \item Computer Science House Root Type Person \hfill May 2015 - Present
-    \end{asparablank}
-\section{\mysidestyle Honors \& \\ Awards}
-    \begin{asparablank}
-        \item Eagle Scout with Three Palms \hfill June 2011
-        \item Third Degree Black Belt in Taekwondo \hfill February 2011
-    \end{asparablank}
+    \begin{compactdesc}
+        \item[Computer Science House] \hfill Septemer 2012 - Dec 2016 \\
+            Member, Financial Director, System Administrator
+    \end{compactdesc}
 
 \end{resume}
 \end{document}
-
